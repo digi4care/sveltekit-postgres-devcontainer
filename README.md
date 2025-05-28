@@ -36,10 +36,94 @@
 - 🧪 **Testing** - Optional Vitest setup (install via Makefile)
 - 🎯 **Code Quality** - ESLint & Prettier configured
 
+## 🛠️ Makefile Commands
+
+The project includes a powerful Makefile to help you manage your SvelteKit project. Here are the most useful commands:
+
+### Project Creation
+```bash
+# Create a new Svelte project (interactive)
+make create projectname
+
+# Create a minimal TypeScript project
+make create-minimal projectname
+
+# Create a demo project with TypeScript
+make create-demo projectname
+
+# Create a library project with TypeScript
+make create-library projectname
+```
+
+### Add-ons & Features
+```bash
+# Add Tailwind CSS
+make add-tailwind
+
+# Add Vitest for testing
+make add-vitest
+
+# Add Drizzle ORM
+make add-drizzle
+
+# Add ESLint
+make add-eslint
+
+# Add Storybook
+make add-storybook
+
+# Add Playwright for end-to-end testing
+make add-playwright
+
+# Add mdsvex for Markdown support
+make add-mdsvex
+```
+
+### Development
+```bash
+# Install dependencies
+make setup
+
+# Start development server
+make dev
+
+# Build for production
+make build
+
+# Preview production build
+make preview
+```
+
+### Database
+```bash
+# Start database container
+make db-up
+
+# Stop database container
+make db-down
+
+# Run database migrations
+make db-migrate
+```
+
+Run `make help` to see all available commands.
+
 ## 🔄 Creating Additional Projects
 
-To create another project, simply run:
+To create another project, you can either use the Makefile (recommended) or the create script:
 
+### Using Makefile (recommended)
+```bash
+# Create a new project with interactive setup
+make create projectname
+
+# Or create a specific type of project
+make create-minimal projectname   # Minimal setup
+make create-demo projectname      # Demo template
+make create-library projectname   # Library template
+```
+
+### Using the create script
 ```bash
 # From the template directory
 ./create-svelte-project.sh another-project
