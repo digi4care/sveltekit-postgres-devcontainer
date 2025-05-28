@@ -5,7 +5,7 @@
 	"window.menuBarVisibility": "toggle",
 	"window.commandCenter": false,
 	"window.zoomLevel": 1,
-	"workbench.iconTheme": "symbols",
+	"workbench.iconTheme": "catppuccin-mocha",
 	"workbench.startupEditor": "none",
 	"workbench.sideBar.location": "left",
 	"workbench.layoutControl.enabled": false,
