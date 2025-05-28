@@ -28,12 +28,12 @@
 
 ## ✨ Features
 
-- ⚡ **SvelteKit** - Modern web framework
-- 🎨 **Tailwind CSS** - For styling
+- ⚡ **SvelteKit** - Modern web framework (optional, install via Makefile)
+- 🎨 **Tailwind CSS** - Optional CSS framework (install via Makefile)
 - 🐘 **PostgreSQL** - Containerized database
 - 🛠️ **Dev Container** - Pre-configured VS Code environment
 - 🔌 **Multiple Runtimes** - nvm, Deno, and Bun support
-- 🧪 **Testing** - Vitest setup included
+- 🧪 **Testing** - Optional Vitest setup (install via Makefile)
 - 🎯 **Code Quality** - ESLint & Prettier configured
 
 ## 🔄 Creating Additional Projects
