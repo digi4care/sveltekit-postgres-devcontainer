@@ -46,6 +46,12 @@ A powerful development environment for SvelteKit applications with PostgreSQL, e
    - Press `F1` and select "Remote-Containers: Reopen in Container"
    - Wait for the container to start and all extensions to be installed
 
+   > **Note:** If extensions are not automatically installed, you can install them manually by:
+   > 1. Clicking on the Extensions icon in the Activity Bar (or press `Ctrl+Shift+X`)
+   > 2. Clicking on the "..." menu in the Extensions view
+   > 3. Selecting "Show Recommended Extensions"
+   > 4. Clicking the cloud download icon in the top-right corner to install all recommended extensions
+
 4. **Install dependencies** (if not done automatically)
    ```bash
    npm install

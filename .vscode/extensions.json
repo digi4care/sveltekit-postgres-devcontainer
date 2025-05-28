@@ -14,6 +14,8 @@
 		"Catppuccin.catppuccin-vsc-icons",
 		"davidanson.vscode-markdownlint",
 		"mhutchie.git-graph",
-		"sumitnalavade.vscode-readme-editor"
+		"sumitnalavade.vscode-readme-editor",
+		"ms-vscode.makefile-tools",
+		"editorconfig.editorconfig"
 	]
 }
