@@ -55,7 +55,6 @@ vite.config.ts.timestamp-*
 .windsurf
 managed_context/
 test_suite_analysis/
-.devcontainer/
 
 # Database
 *.sqlite
