@@ -1,0 +1,59 @@
+# Dependencies and package directories
+node_modules/
+venv/
+.env/
+__pycache__/
+*.pyc
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build and distribution directories
+dist/
+build/
+*.egg-info/
+
+# Log files
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment and configuration files
+.env
+.env.local
+.env*.local
+
+# Cache and temporary files
+.cache/
+tmp/
+temp/
+
+# Test coverage
+.coverage
+coverage/
+.pytest_cache/
+
+# Documentation build directories
+docs/_build/
+_site/
+
+# Database files
+*.sqlite3
+*.db
+
+# Compiled files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Script files
+llm_txt.*
