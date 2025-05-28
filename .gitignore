@@ -1,11 +1,69 @@
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Dependencies
 node_modules
-/build
+/.pnpm-store
 /.svelte-kit
 /package
+
+# Build files
+/build
+/dist
+/.svelte-kit
+/tsconfig.json
+/tsconfig.tsbuildinfo
+
+# Environment variables
 .env
 .env.*
 !.env.example
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+.vercel
+.output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local development
+.vercel
+.netlify
+.astro
+.history/
+
+# SvelteKit specific
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Project specific
 .qodo
+.windsurf
+managed_context/
+test_suite_analysis/
+
+# Database
+*.sqlite
+*.sqlite3
+pgdata/
+
+# Misc
+.cache/
+.temp/
+.tmp/
+coverage/
+*.local
