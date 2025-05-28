@@ -37,6 +37,8 @@ rsync -av \
     --exclude='*.local' \
     --exclude='.DS_Store' \
     --exclude='.vscode' \
+    --exclude='create-svelte-project.sh' \
+    --exclude='README.md' \
     "$TEMPLATE_DIR"/. "$DESTINATION"
 
 # Initialize new git repository
