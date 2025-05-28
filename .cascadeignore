@@ -1,3 +1,6 @@
+# Development container
+.devcontainer/
+
 # Dependencies and package directories
 node_modules/
 venv/
