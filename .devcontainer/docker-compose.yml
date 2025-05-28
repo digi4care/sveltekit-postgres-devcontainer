@@ -4,8 +4,8 @@ services:
             context: .
             dockerfile: Dockerfile
             args:
+                NODE_VERSIONS: ${NODE_VERSIONS:-16 18 20}
                 NPM_VERSION: latest
-                SVELTE_VERSION: ${SVELTE_VERSION:-4.2.10}
 
         volumes:
             - ..:/workspace:cached

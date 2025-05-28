@@ -75,7 +75,17 @@
 	"forwardPorts": [
 		5173,
 		5432
-	]
+	],
+	"portsAttributes": {
+		"5173": {
+			"label": "SvelteKit",
+			"onAutoForward": "notify"
+		},
+		"5432": {
+			"label": "PostgreSQL",
+			"onAutoForward": "notify"
+		}
+	}
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "bash scripts/install.sh",
 	// "postCreateCommand": "npm install"

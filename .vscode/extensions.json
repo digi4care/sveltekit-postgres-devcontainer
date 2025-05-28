@@ -12,6 +12,8 @@
 		"bradlc.vscode-tailwindcss",
 		"Catppuccin.catppuccin-vsc",
 		"Catppuccin.catppuccin-vsc-icons",
-		"davidanson.vscode-markdownlint"
+		"davidanson.vscode-markdownlint",
+		"mhutchie.git-graph",
+		"sumitnalavade.vscode-readme-editor"
 	]
 }
