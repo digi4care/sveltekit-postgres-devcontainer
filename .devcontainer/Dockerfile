@@ -54,6 +54,13 @@ RUN su node -c "curl -fsSL https://bun.sh/install | bash"
 # Installeer deno als node gebruiker
 RUN su node -c "curl -fsSL https://deno.land/x/install/install.sh | sh"
 
+RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && \
+  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && \
+  apt-get update && \
+  apt-get install -y gh && \
+  apt-get clean -y && \
+  rm -rf /var/lib/apt/lists/*
+
 # Werk de PATH van de gebruiker bij
 ENV PATH="/home/node/.bun/bin:/home/node/.deno/bin:/home/node/.local/bin:${PATH}"
 
@@ -93,6 +100,7 @@ RUN echo "\n=== Development Environment ===" && \
   echo "pnpm: $(pnpm --version || echo 'Niet geïnstalleerd')" && \
   echo "Bun: $(bun --version || echo 'Niet geïnstalleerd')" && \
   echo "Deno: $(deno --version || echo 'Niet geïnstalleerd')" && \
+  echo "Gh: $(gh --version)" && \
   echo "Python: $(python3 --version)" && \
   echo "Pip: $(pip3 --version)" && \
   echo "============================\n"
