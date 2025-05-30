@@ -138,6 +138,7 @@ make create-library projectname   # Library template
 - Git
 - cURL
 - jq
+- GitHub CLI (authenticate with `gh auth login`)
 - and more...
 
 ## 📧 Contact
